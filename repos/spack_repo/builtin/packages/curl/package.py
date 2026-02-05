@@ -90,7 +90,7 @@ class Curl(NMakePackage, AutotoolsPackage, CMakePackage):
 
     # CMake 4.0: is not compatible with CMake systems requiring
     # 3.0, which curl@7.63 requires
-    depends_on("cmake@:3", when="build_system=cmake @:7.63")
+    depends_on("cmake@:3", when="build_system=cmake @:7.63", type="build")
 
     depends_on("gnutls", when="tls=gnutls")
     depends_on("mbedtls@3: +pic", when="tls=mbedtls @8.17:")
