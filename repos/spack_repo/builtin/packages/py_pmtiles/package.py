@@ -16,6 +16,7 @@ class PyPmtiles(PythonPackage):
 
     license("BSD-3-Clause", checked_by="Chrismarsh")
 
+    version("3.6.0", sha256="02871f649e81d408d6149824402d310ddfefe6b9bdf646d6784ef3221b36286f")
     version("3.5.0", sha256="2b849ede4e006aa0ba9d508a4d77400dd5117d5da74346e057dc9e28bad8e9f0")
 
     # https://github.com/protomaps/PMTiles/blob/main/python/pmtiles/setup.py

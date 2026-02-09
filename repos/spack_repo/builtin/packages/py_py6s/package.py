@@ -17,6 +17,7 @@ class PyPy6s(PythonPackage):
     homepage = "https://py6s.rtwilson.com/"
     pypi = "py6s/Py6S-1.8.0.tar.gz"
 
+    version("1.9.2", sha256="2378ef027bbd3ead67cec47e9a14cf799b3bd851bc7833fbd44e2440666c0ff3")
     version("1.8.2", sha256="296b09db5e56ef82aced031aa06219c2901ef598f67c0e47d07c566bfb4b87db")
     version("1.8.0", sha256="256162d2f1f558e601d4f79022c037a0051838ba307b9f4d1f5fcf0b46a0c277")
 

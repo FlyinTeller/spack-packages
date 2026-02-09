@@ -15,6 +15,7 @@ class PyCasadi(PythonPackage):
 
     license("LGPL")
 
+    version("3.7.2", sha256="b4d7bd8acdc4180306903ae1c9eddaf41be2a3ae2fa7154c57174ae64acdc60d")
     version("3.6.7", sha256="21cde87288afebb32a2a035bf6b6a91a025e24ee14aba7a0ae5515707b9887c1")
     version("3.6.4", sha256="affdca1a99c14580992cdf34d247754b7d851080b712c2922ad2e92442eeaa35")
 

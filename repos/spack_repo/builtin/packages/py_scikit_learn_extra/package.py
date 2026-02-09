@@ -20,6 +20,7 @@ class PyScikitLearnExtra(PythonPackage):
 
     license("BSD-3-Clause")
 
+    version("0.3.0", sha256="7912d43384470d77609e53819d0291967f21010e5c3a3847f9026fc02f9c7893")
     version("0.2.0", sha256="3b1bb5fedde47920eb4b3fa0a0c18f80cc7359d9d0496720178788c6153b8019")
 
     depends_on("c", type="build")

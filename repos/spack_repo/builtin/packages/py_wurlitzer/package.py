@@ -16,6 +16,7 @@ class PyWurlitzer(PythonPackage):
 
     license("MIT")
 
+    version("3.1.1", sha256="bfb9144ab9f02487d802b9ff89dbd3fa382d08f73e12db8adc4c2fb00cd39bd9")
     version("3.0.3", sha256="224f5fe70618be3872c05dfddc8c457191ec1870654596279fcc1edadebe3e5b")
     version("3.0.2", sha256="36051ac530ddb461a86b6227c4b09d95f30a1d1043de2b4a592e97ae8a84fcdf")
 

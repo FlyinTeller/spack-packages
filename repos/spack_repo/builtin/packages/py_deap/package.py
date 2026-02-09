@@ -15,6 +15,7 @@ class PyDeap(PythonPackage):
 
     license("LGPL-3.0-or-later")
 
+    version("1.4.3", sha256="7c97088fb05835bdc255bec475cb0e778de2b43e44cbefbf2bcd655aeec865fd")
     version("1.3.3", sha256="8772f1b0fff042d5e516b0aebac2c706243045aa7d0de8e0b8658f380181cf31")
     version("1.3.1", sha256="11f54493ceb54aae10dde676577ef59fc52d52f82729d5a12c90b0813c857a2f")
 

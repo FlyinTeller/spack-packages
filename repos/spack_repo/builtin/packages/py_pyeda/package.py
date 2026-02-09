@@ -15,6 +15,7 @@ class PyPyeda(PythonPackage):
 
     license("BSD-2-Clause")
 
+    version("0.29.0", sha256="efd4d3e548079ca059f44f9babb9bd67b332ec1762897324fcceb8da1d0f5fed")
     version("0.28.0", sha256="07185f458d5d0b2ba5058da8b95dad6ab7684ceaf41237a25bcd3f005490f59d")
 
     depends_on("c", type="build")  # generated

@@ -15,6 +15,7 @@ class PyCrc32c(PythonPackage):
 
     license("LGPL-2.1-or-later")
 
+    version("2.8", sha256="578728964e59c47c356aeeedee6220e021e124b9d3e8631d95d9a5e5f06e261c")
     version("2.7.1", sha256="f91b144a21eef834d64178e01982bb9179c354b3e9e5f4c803b0e5096384968c")
 
     depends_on("python@3.7:", type=("build", "link", "run"))

@@ -17,6 +17,7 @@ class PyBiobbStructureChecking(PythonPackage):
     maintainers("d-beltran")
 
     # Versions
+    version("3.15.6", sha256="4d6e25313269ba212f921a741f4054a1185264fd1d757372a36a8b5da47e94c7")
     version("3.13.5", sha256="4ba074da556a7aecac215f2020a04274c05f155413ed467177b9c9f31a53d4d0")
     version("3.13.4", sha256="d819819d13c7ad219411b70b043555dcd65d5535f696a1121db562646931f445")
 

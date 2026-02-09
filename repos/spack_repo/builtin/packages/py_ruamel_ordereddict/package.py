@@ -20,6 +20,7 @@ class PyRuamelOrdereddict(PythonPackage):
 
     license("MIT")
 
+    version("0.4.15", sha256="d7d9cf8b11e7662deb460260cf062980cd84b87a1d0457132060ab9d44e0a5f4")
     version("0.4.14", sha256="281051d26eb2b18ef3d920e1e260716a52bd058a6b1a2f324102fc6a15cb8d4a")
 
     depends_on("c", type="build")  # generated

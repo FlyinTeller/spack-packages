@@ -14,6 +14,7 @@ class PyHfXet(PythonPackage):
 
     license("Apache-2.0")
 
+    version("1.2.1", sha256="6c7a48d40b25f06f7f1b0fdd96c6f9d222dd4d0c833990684723eb77163b7372")
     version("1.1.10", sha256="408aef343800a2102374a883f283ff29068055c111f003ff840733d3b715bb97")
     version("1.1.5", sha256="69ebbcfd9ec44fdc2af73441619eeb06b94ee34511bbcf57cd423820090f5694")
 

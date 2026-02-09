@@ -16,6 +16,7 @@ class PyPyelftools(PythonPackage):
 
     license("Unlicense")
 
+    version("0.32", sha256="6de90ee7b8263e740c8715a925382d4099b354f29ac48ea40d840cf7aa14ace5")
     version("0.29", sha256="ec761596aafa16e282a31de188737e5485552469ac63b60cfcccf22263fd24ff")
     version("0.28", sha256="53e5609cac016471d40bd88dc410cd90755942c25e58a61021cfdf7abdfeacff")
     version("0.27", sha256="cde854e662774c5457d688ca41615f6594187ba7067af101232df889a6b7a66b")

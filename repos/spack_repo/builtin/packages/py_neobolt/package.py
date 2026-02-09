@@ -13,6 +13,7 @@ class PyNeobolt(PythonPackage):
     homepage = "https://github.com/neo4j-drivers/neobolt"
     pypi = "neobolt/neobolt-1.7.16.tar.gz"
 
+    version("1.7.17", sha256="1d0d5efce7221fc4f0ffc4a315bc5272708be5aa2aef5434269e800372d8db89")
     version("1.7.16", sha256="ca4e87679fe3ed39aec23638658e02dbdc6bbc3289a04e826f332e05ab32275d")
 
     depends_on("c", type="build")  # generated

@@ -18,6 +18,7 @@ class PyPycuda(PythonPackage):
 
     license("MIT")
 
+    version("2026.1", sha256="759516160628ba06f32ce7e563e3f5b9214691dc9528a03ea99ea1073f4e14ba")
     version("2024.1.2", sha256="d110b727cbea859da4b63e91b6fa1e9fc32c5bade02d89ff449975996e9ccfab")
     version("2021.1", sha256="ab87312d0fc349d9c17294a087bb9615cffcf966ad7b115f5b051008a48dd6ed")
     version("2020.1", sha256="effa3b99b55af67f3afba9b0d1b64b4a0add4dd6a33bdd6786df1aa4cc8761a5")

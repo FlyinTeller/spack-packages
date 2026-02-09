@@ -16,6 +16,7 @@ class PyLmdb(PythonPackage):
 
     license("OLDAP-2.8")
 
+    version("1.7.5", sha256="f0604751762cb097059d5412444c4057b95f386c7ed958363cf63f453e5108da")
     version("1.3.0", sha256="60a11efc21aaf009d06518996360eed346f6000bfc9de05114374230879f992e")
     version("1.1.1", sha256="165cd1669b29b16c2d5cc8902b90fede15a7ee475c54d466f1444877a3f511ac")
 

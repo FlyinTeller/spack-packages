@@ -16,6 +16,7 @@ class PyCoverage(PythonPackage):
     license("Apache-2.0")
     maintainers("adamjstewart")
 
+    version("7.13.4", sha256="e5c8f6ed1e61a8b2dcdf31eb0b9bbf0130750ca79c1c49eb898e2ad86f5ccc91")
     version("7.12.0", sha256="fc11e0a4e372cb5f282f16ef90d4a585034050ccda536451901abfb19a57f40c")
     version("7.10.7", sha256="f4ab143ab113be368a3e9b795f9cd7906c5ef407d6173fe9675a902e1fffc239")
     version("7.10.0", sha256="2768885aef484b5dcde56262cbdfba559b770bfc46994fe9485dc3614c7a5867")

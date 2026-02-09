@@ -16,6 +16,7 @@ class PyUwsgi(PythonPackage):
 
     license("GPL-2.0-only")
 
+    version("2.0.31", sha256="e8f8b350ccc106ff93a65247b9136f529c14bf96b936ac5b264c6ff9d0c76257")
     version("2.0.27", sha256="3ee5bfb7e6e9c93478c22aa8183eef35b95a2d5b14cca16172e67f135565c458")
     version("2.0.18", sha256="4972ac538800fb2d421027f49b4a1869b66048839507ccf0aa2fda792d99f583")
 

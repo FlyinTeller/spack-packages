@@ -16,6 +16,7 @@ class PyPyspoa(PythonPackage):
 
     license("MIT")
 
+    version("0.3.2", sha256="91523a01e2c579acc9fa0423ff4a96912c57c456c876ac08168bab92befbc781")
     version("0.0.8", sha256="8299d18066b498a6ef294c5a33a99266ded06eeb022f67488d2caecba974b0a4")
 
     depends_on("c", type="build")  # generated

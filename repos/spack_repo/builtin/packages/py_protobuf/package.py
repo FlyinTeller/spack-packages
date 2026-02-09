@@ -18,6 +18,7 @@ class PyProtobuf(PythonPackage):
     homepage = "https://developers.google.com/protocol-buffers/"
     pypi = "protobuf/protobuf-3.11.0.tar.gz"
 
+    version("6.33.5", sha256="6ddcac2a081f8b7b9642c09406bc6a4290128fce5f471cddd165960bb9119e5c")
     version("6.32.1", sha256="ee2469e4a021474ab9baafea6cd070e5bf27c7d29433504ddea1a4ee5850f68d")
     version("5.28.2", sha256="59379674ff119717404f7454647913787034f03fe7049cbef1d74a97bb4593f0")
     version("5.27.5", sha256="7fa81bc550201144a32f4478659da06e0b2ebe4d5303aacce9a202a1c3d5178d")
