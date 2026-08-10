@@ -303,7 +303,19 @@ class PyNumpy(PythonPackage):
         elif spec.satisfies("threads=tbb"):
             threads = "tbb"
         elif spec.satisfies("threads=openmp"):
-            threads = "gomp" if spec.satisfies("%gcc") else "iomp"
+            # intel-oneapi-mkl is build_system=generic (a binary installer,
+            # not actually compiled by spack), so its own %compiler tag
+            # reflects the concretizer's arbitrary/default choice, not
+            # anything about how MKL itself was produced - the concretizer
+            # can resolve it to a compiler unrelated to (and inconsistent
+            # with) the one actually building *this* package, even under an
+            # explicit top-level %compiler pin elsewhere in the same spec
+            # (reproduced: root spec pinned %gcc@13.4, intel-oneapi-mkl
+            # still resolved to %clang@22.1.8). What matters for picking
+            # gomp vs iomp is which OpenMP runtime *this build*'s own
+            # compiler will link against, so check self.spec (this
+            # package's own compiler), not MKL's.
+            threads = "gomp" if self.spec.satisfies("%gcc") else "iomp"
         else:
             raise InstallError("Unknown 'threads' variant for the Intel MKL libaray")
 
