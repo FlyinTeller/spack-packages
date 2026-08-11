@@ -1,0 +1,29 @@
+--- a/setup.py	2026-08-11 10:50:43.830364033 +0200
++++ b/setup.py	2026-08-11 10:51:02.248643195 +0200
+@@ -15,11 +15,13 @@
+ from setuptools import setup
+ 
+ 
+-# (1) check required versions (from https://medium.com/@daveshawley/safely-using-setup-cfg-for-metadata-1babbe54c108)
+-import pkg_resources
++# (1) check required versions
++from importlib.metadata import PackageNotFoundError, version
+ 
+-pkg_resources.require("setuptools>=39.2")
+-pkg_resources.require("setuptools_scm")
++setuptools_version = tuple(int(x) for x in version("setuptools").split(".")[:2])
++version("setuptools_scm")  # raises PackageNotFoundError if missing
++if setuptools_version < (39, 2):
++    raise PackageNotFoundError("setuptools>=39.2")
+ 
+ 
+ # (2) Generate download url using git version
+@@ -34,7 +36,7 @@
+     "write_to": "src/makefun/_version.py",
+ }
+ # Use the 'version_file_template' directive if possible to avoid type hints and annotations (python <3.8)
+-setuptools_scm_version = pkg_resources.get_distribution("setuptools_scm").version
++setuptools_scm_version = version("setuptools_scm")
+ # for some reason importing packaging.version.Version here fails on python 3.5
+ # from packaging.version import Version
+ # if Version(setuptools_scm_version) >= Version('6'):
